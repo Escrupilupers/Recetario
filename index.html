@@ -3,46 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recetario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
 </head>
 <body>
+    <!-- Encabezado con imagen de fondo -->
     <div class="bg-image" style="background-image: url('https://wallpapers.com/images/hd/food-4k-1pf6px6ryqfjtnyr.jpg'); height: 100vh;">
+        <!-- Elementos del menú dentro de la máscara -->
         <div class="mask p-2" style="background-color: rgba(255, 149, 146, 0.6);">
             <div class="container">
                 <div class="row mx-3 custom-links">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-3">
-                        <a href="">A cocinar</a>
+                        <a href="#">A cocinar</a>
                     </div>
                     <div class="col-sm-1">
-                        <a href="">Home</a>
+                        <a href="#">Home</a>
                     </div>
                     <div class="col-sm-1">
-                        <a href="">Recetas</a>
+                        <a href="#">Recetas</a>
                     </div>
                     <div class="col-sm-1">
-                        <a href="">Pagina</a>
+                        <a href="#">Paginas</a>
                     </div>
                     <div class="col-sm-2">
-                        <a href="">Sobre nosotros</a>
+                        <a href="#">Sobre nosotros</a>
                     </div>
                     <div class="col-sm-1">
-                        <a href="">Suscribete</a>
+                        <a href="#">Suscríbete</a>
                     </div>
                     <div class="col-sm-2">
-                        <input>
+                        <input type="text" class="form-control" placeholder="Buscar">
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Título y botón fuera del mask -->
+        <div class="container text-center" style="position: relative; z-index: 5;">
+            <h1 class="text-white mt-5">Libera la excelencia culinaria</h1>
+            <button class="btn btn-danger mt-3">Ver Recetas</button>
+        </div>
     </div>
-    <div class="row mx-3">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-11">
-            <h1 style="font-family: 'Lucida Console', monospace;">Recetas populares</h1>
-          </div>          
+
+    <!-- Galería de imágenes flotantes entre contenedores -->
+    <div class="image-gallery text-center">
+        <img src="https://via.placeholder.com/150" alt="Receta 1">
+        <img src="https://via.placeholder.com/150" alt="Receta 2">
+        <img src="https://via.placeholder.com/150" alt="Receta 3">
+        <img src="https://via.placeholder.com/150" alt="Receta 4">
     </div>
+
+    <!-- Sección principal con Últimas Recetas y Recetas en Tendencia -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna de la izquierda para Últimas Recetas -->
+            <div class="col-lg-8">
+                <h2 class="text-center">Últimas Recetas</h2>
+                <div class="row mt-4">
+                    <div class="col-sm-4">
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Última receta 1">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Última receta 2">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Última receta 3">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Columna de la derecha para Recetas en Tendencia y Actualizaciones -->
+            <div class="col-lg-4">
+                <!-- Recetas en Tendencia -->
+                <h2 class="text-center">Recetas en Tendencia</h2>
+                <div class="trend-recipes d-flex justify-content-center mt-3">
+                    <img src="https://via.placeholder.com/50x50" class="img-thumbnail" alt="Tendencia 1">
+                    <img src="https://via.placeholder.com/50x50" class="img-thumbnail" alt="Tendencia 2">
+                    <img src="https://via.placeholder.com/50x50" class="img-thumbnail" alt="Tendencia 3">
+                    <img src="https://via.placeholder.com/50x50" class="img-thumbnail" alt="Tendencia 4">
+                </div>
+
+                <!-- Imagen adicional a la izquierda de las recetas en tendencia -->
+                <div class="mt-4">
+                    <img src="https://via.placeholder.com/350x250" class="img-fluid rounded" alt="Imagen adicional">
+                </div>
+
+                <!-- Sección de Actualizaciones -->
+                <div class="mt-4 text-center">
+                    <h4>Actualizaciones</h4>
+                    <input type="email" class="form-control" placeholder="Correo">
+                    <button class="btn btn-danger mt-2">Suscríbete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container mt-5">
+        <div class="d-flex justify-content-between">
+            <p>Suscríbete y Síguenos</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://via.placeholder.com/24x24" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/24x24" alt="Instagram"></a>
+                <a href="#"><img src="https://via.placeholder.com/24x24" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
