@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .img-fluid, .img-thumbnail {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .trend-recipes img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>    
 </head>
 <body>
     <!-- Encabezado con imagen de fondo -->
     <div class="bg-image" style="background-image: url('https://wallpapers.com/images/hd/food-4k-1pf6px6ryqfjtnyr.jpg'); height: 100vh;">
-        <!-- Elementos del menú dentro de la máscara -->
         <div class="mask p-2" style="background-color: rgba(255, 149, 146, 0.6);">
             <div class="container">
                 <div class="row mx-3 custom-links">
@@ -19,7 +30,7 @@
                         <a href="#">A cocinar</a>
                     </div>
                     <div class="col-sm-1">
-                        <a href="#">Home</a>
+                        <a href="C:\xampp\htdocs\Projecto web\Recetario\index.html">Home</a>
                     </div>
                     <div class="col-sm-1">
                         <a href="#">Recetas</a>
@@ -28,7 +39,7 @@
                         <a href="#">Paginas</a>
                     </div>
                     <div class="col-sm-2">
-                        <a href="#">Sobre nosotros</a>
+                        <a href="C:\xampp\htdocs\Projecto web\Recetario\sobre-nosotros.html">Sobre nosotros</a>
                     </div>
                     <div class="col-sm-1">
                         <a href="#">Suscríbete</a>
@@ -49,43 +60,30 @@
 
     <!-- Galería de imágenes flotantes entre contenedores -->
     <div class="image-gallery text-center">
-        <img src="https://via.placeholder.com/150" alt="Receta 1">
-        <img src="https://via.placeholder.com/150" alt="Receta 2">
-        <img src="https://via.placeholder.com/150" alt="Receta 3">
-        <img src="https://via.placeholder.com/150" alt="Receta 4">
+        <img src="https://content.skyscnr.com/m/2dcd7d0e6f086057/original/GettyImages-186142785.jpg" alt="Receta 1" class="img-fluid">
+        <img src="https://lirp.cdn-website.com/8af471c9/dms3rep/multi/opt/Comida-r%C3%A1pida-caracter%C3%ADsticas-+y-+ventajas-1920w.jpg" alt="Receta 2" class="img-fluid">
+        <img src="https://olaclick.com/wp-content/uploads/elementor/thumbs/Estrategias-de-Marketing-para-tu-restaurante-de-comida-rapida-100-qihbx7u0oh4fif67h9nlkbeotqzhkc07oprrd006l4.jpg" alt="Receta 3" class="img-fluid">
+        <img src="https://irh.edu.mx/wp-content/uploads/2023/04/pexels-elevate-12673201a.jpg" alt="Receta 4" class="img-fluid">
     </div>
 
     <!-- Sección principal con Últimas Recetas y Recetas en Tendencia -->
     <div class="container mt-5">
         <div class="row">
-            <!-- Columna de la izquierda para Últimas Recetas -->
             <div class="col-lg-8">
                 <h2 class="text-center">Últimas Recetas</h2>
                 <div class="row mt-4">
                     <div class="col-sm-4">
-                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Última receta 1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg16x66rKl5qTK8MyauNapR3mLypTwl6v9-w&s" class="img-fluid rounded" alt="Última receta 1">
                     </div>
                     <div class="col-sm-4">
-                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Última receta 2">
+                        <img src="https://www.okchicas.com/wp-content/uploads/2021/05/Postres-aesthetic-1.jpg" class="img-fluid rounded" alt="Última receta 2">
                     </div>
                     <div class="col-sm-4">
-                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Última receta 3">
+                        <img src="https://i.pinimg.com/1200x/ba/2d/69/ba2d690875e40e823fd23dd7da1bbaaf.jpg" class="img-fluid rounded" alt="Última receta 3">
                     </div>
-                </div>
-                <div class="d-flex justify-content-center mt-4">
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
-
-            <!-- Columna de la derecha para Actualizaciones y Recetas en Tendencia -->
             <div class="col-lg-4">
-                <!-- Actualizaciones -->
                 <div class="updates-container">
                     <div class="mask-gray p-3 rounded">
                         <h4 class="text-center">Actualizaciones</h4>
@@ -94,35 +92,32 @@
                     </div>
                 </div>
 
-                <!-- Recetas en Tendencia -->
                 <div class="trend-container mt-4">
                     <div class="mask-gray p-3 rounded">
                         <h2 class="text-center">Recetas en Tendencia</h2>
                         <div class="trend-recipes d-flex justify-content-center mt-3">
-                            <img src="https://via.placeholder.com/50x50" class="img-thumbnail" alt="Tendencia 1">
-                            <img src="https://via.placeholder.com/50x50" class="img-thumbnail" alt="Tendencia 2">
-                            <img src="https://via.placeholder.com/50x50" class="img-thumbnail" alt="Tendencia 3">
-                            <img src="https://via.placeholder.com/50x50" class="img-thumbnail" alt="Tendencia 4">
+                            <img src="https://content.skyscnr.com/m/2dcd7d0e6f086057/original/GettyImages-186142785.jpg" class="img-thumbnail" alt="Tendencia 1">
+                            <img src="https://lirp.cdn-website.com/8af471c9/dms3rep/multi/opt/Comida-r%C3%A1pida-caracter%C3%ADsticas-+y-+ventajas-1920w.jpg" class="img-thumbnail" alt="Tendencia 2">
+                            <img src="https://olaclick.com/wp-content/uploads/elementor/thumbs/Estrategias-de-Marketing-para-tu-restaurante-de-comida-rapida-100-qihbx7u0oh4fif67h9nlkbeotqzhkc07oprrd006l4.jpg" class="img-thumbnail" alt="Tendencia 3">
+                            <img src="https://storage.googleapis.com/retodiario/2023/09/1d6092bd-p-scaled.jpg" class="img-thumbnail" alt="Tendencia 4">
                         </div>
                     </div>
                 </div>
 
-                <!-- Imagen adicional a la izquierda de las recetas en tendencia -->
                 <div class="mt-4">
-                    <img src="https://via.placeholder.com/350x250" class="img-fluid rounded" alt="Imagen adicional">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg16x66rKl5qTK8MyauNapR3mLypTwl6v9-w&s" class="img-fluid rounded" alt="Imagen adicional">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="container mt-5">
         <div class="d-flex justify-content-between">
             <p>Suscríbete y Síguenos</p>
             <div class="social-icons">
-                <a href="#"><img src="https://via.placeholder.com/24x24" alt="Facebook"></a>
-                <a href="#"><img src="https://via.placeholder.com/24x24" alt="Instagram"></a>
-                <a href="#"><img src="https://via.placeholder.com/24x24" alt="YouTube"></a>
+                <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-512.png" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png" alt="Instagram"></a>
+                <a href="#"><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Youtube_svg-512.png" alt="YouTube"></a>
             </div>
         </div>
     </footer>
